@@ -13,7 +13,7 @@ public class ArraySorting {
         arr[i]=sc.nextInt();
     }
     {
-        for(j=0;j<4;j++
+        for(j=0;j<4;j++)
         {
             if(arr[j]>arr[j+1])
             {
