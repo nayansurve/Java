@@ -1,4 +1,4 @@
-import java.nio.channels.Pipe.SourceChannel;
+
 import java.util.Scanner;
 
 public class StringPalindrom {
