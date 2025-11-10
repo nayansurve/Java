@@ -13,17 +13,17 @@ public class LongestWord {
             char ch = str.charAt(i);
 
             if(ch != ' ') {
-                Current = Current + ch; // build current word
+                Current = Current + ch; 
             } else { 
-                // space found → compare words
+               
                 if(Current.length() > Longest.length()) {
                     Longest = Current;
                 }
-                Current = ""; // reset for next word
+                Current = ""; 
             }
         }
 
-        // check the last word (in case no space at the end)
+        
         if(Current.length() > Longest.length()) {
             Longest = Current;
         }
