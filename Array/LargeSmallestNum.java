@@ -1,40 +1,39 @@
 import java.util.Scanner;
 
 public class LargeSmallestNum {
-
-    public static void main(String args[])
-    {
-        int arr[]=new int[5];
-        int i,small,large;
+    public static void main(String[] args) {
+        
+        int arr[]= new int[5];
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter Five Elements");
-      for(i=0;i<5;i++)
-      {
-        arr[i]=sc.nextInt();
+        System.out.println("Enter an Array =");
+        int small,large;
+        int i,j;
 
-      }
-      large =arr[0];
-      small = arr[0];
-
-     for(i=1;i<5;i++)
-      {
-        if (arr[i]>large)
-         {
-            large=arr[i];
+        for( i=0;i<5;i++)
+        {
+            arr[i]=sc.nextInt();
+        
         }
-        else if (arr[i]<small) {
-            small=arr[i];
+        small= arr[0];
+        large =arr[0];
+      
+         for(j=0;j<5;j++)
+         {
+            if (arr[j] < small)
+            {
+                small = arr[j];
+            }
+            if(arr[j] > large)
+            {
+                large = arr[j];
+            }
+         }
+         System.out.println("Largest Element is =" + large);
+         System.out.println("smallest elemnt is =" + small);
             
         }
-        else
-        {
-            System.out.println("Largest Number is = "+large);
-            System.out.println("Smallest Number is = "+small);
-        }
-      }
-
-      
     }
-      
+
     
-}
+
+
