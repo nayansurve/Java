@@ -15,7 +15,7 @@ public class ArraySortingBuiltIn {
             arr[i]=sc.nextInt();
             
         }
-          Arrays.sort(arr);
+          Arrays.sort(arr); //Sorting Using Built In Function
 
         System.out.println("sorted elements are =");
 
