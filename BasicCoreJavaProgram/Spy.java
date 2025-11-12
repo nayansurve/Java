@@ -4,7 +4,7 @@ public class Spy {
 
     public static void main(String args[])
     {
-        int n,rem=0,mul=1,sum=1,n1; //mul=1 beacuse  0 *1=0
+        int n,rem=0,mul=1,sum=1,n1; 
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter a number");
         n=sc.nextInt();
