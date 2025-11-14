@@ -1,23 +1,19 @@
 package com.example.springbootpractice.Controller;
 
-import org.springframework.web.bind.annotation.*;
-
 import com.example.springbootpractice.Entity.Student;
-
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/student")
 public class StudentController {
 
-    // GET API
     @GetMapping("/hello")
-    public String sayHello() {
+    public String hello() {
         return "Hello Spring Boot!";
     }
 
-    // POST API
     @PostMapping("/add")
     public Student addStudent(@RequestBody Student student) {
-        return student;   // returns the same student data
+        return student;   // return same data back
     }
 }
