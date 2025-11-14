@@ -13,7 +13,8 @@ public class StudentController {
     }
 
     @PostMapping("/add")
-    public Student addStudent(@RequestBody Student student) 
+    public Student addStudent(@RequestBody Student student) {
         return student;   // return same data back
     
+}
 }
