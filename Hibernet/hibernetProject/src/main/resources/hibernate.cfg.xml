@@ -1,19 +1,23 @@
 <hibernate-configuration>
     <session-factory>
-        <!-- Database connection -->
-        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernatedb</property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">password</property>
+        <!-- H2 in-memory database -->
+        <property name="hibernate.connection.url">
+    jdbc:h2:~/hibernatedb;AUTO_SERVER=TRUE
+</property>
+<property name="hibernate.connection.username">sa</property>
+<property name="hibernate.connection.password"></property>
+<property name="hibernate.dialect">org.hibernate.dialect.H2Dialect</property>
 
         <!-- SQL dialect -->
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.H2Dialect</property>
 
         <!-- Show SQL -->
         <property name="hibernate.show_sql">true</property>
+
+        <!-- HBM2DDL -->
         <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!-- Mapping class -->
-        <mapping class="com.example.hibernatedemo.Student"/>
+        <mapping class="com.tap.hiber.demo.Student"/>
     </session-factory>
 </hibernate-configuration>
